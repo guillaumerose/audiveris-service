@@ -1,0 +1,37 @@
+<div class="row mb-3">
+    <h4>What is this scanner?</h4>
+    <p>
+        This project can turn any scanned image into a score that can be loaded in MuseScore. <br>
+        It allows you to edit any score you have at home!<br>
+        The engine behind this service is <a href="https://github.com/Audiveris/audiveris">Audiveris</a>.
+    </p>
+</div>
+
+<div class="row mb-3 mt-3">
+    <h4>Scan your score</h4>
+
+    <div class="col-sm-6 mx-auto">
+        <form class="form-inline" action="/upload" method="post" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-9">
+                    <input class="form-control" type="file" name="file" accept="image/png, image/jpeg" required>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-primary" type="submit">Convert</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <h4>Examples</h4>
+
+    <div class="card mt-3" style="width: 18rem;">
+        <img class="card-img-top" src="/public/example.jpg">
+        <div class="card-body">
+            <h5 class="card-title">Horn score</h5>
+            <a href="/sheet/8e9424abcb325a711a5ce97ad1c2e6dc020f08944be23020009fcefc6bcf620a" class="btn btn-primary">View</a>
+        </div>
+    </div>
+</div>

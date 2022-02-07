@@ -1,0 +1,13 @@
+diff --git a/src/main/org/audiveris/omr/Main.java b/src/main/org/audiveris/omr/Main.java
+index 4892c98f6..dafa7fb79 100644
+--- a/src/main/org/audiveris/omr/Main.java
++++ b/src/main/org/audiveris/omr/Main.java
+@@ -158,7 +158,7 @@ public class Main
+             logger.info("Running in batch mode");
+ 
+             // Perhaps time to check for a new release?
+-            Versions.considerPolling();
++            // Versions.considerPolling();
+ 
+             // Check MusicFont is loaded
+             MusicFont.checkMusicFont();

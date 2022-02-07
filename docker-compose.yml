@@ -1,0 +1,7 @@
+services:
+  front:
+    build: .
+    ports:
+      - 9008:1323
+    volumes:
+      - ./data:/data
